@@ -1,0 +1,76 @@
+.green
+  &__line
+    height: 3px
+    background-color: $light-green
+/**  Белый полупрозраяный фон **/    
+.white
+  &-background
+    background: rgba($white, 0.67)
+    max-width: 1280px
+    margin: auto
+    &__hero
+      height: 900px
+      display: flex
+      justify-content: space-between
+      align-items: flex-end
+    &__map
+      padding-top: 4rem
+      padding-bottom: 4rem
+    &__reasons
+      padding-top: 4rem
+      padding-bottom: 4rem
+    &__courts
+      padding-top: 4rem
+      padding-bottom: 4rem
+    &__sport-life
+      padding-top: 4rem
+      padding-bottom: 4rem
+      position: relative
+/** Заголовки с теннисными мячами **/
+.section
+  &__title-wrap
+    display: flex
+    justify-content: center
+    align-items: center
+  &__svg--right, &__svg--left
+    height: 17px
+    width: 17px
+  &__title
+    margin-left: 0.4rem
+    margin-right: 0.4rem
+    text-transform: uppercase
+    font-family: "Segoe UI Light"
+    font-size: 1.6rem
+    font-weight: 900
+    color: $dark-green
+    letter-spacing: 0.06rem
+/** Зеленая кнопка **/
+.button
+  &__href
+    &--green
+      display: inline-block
+      padding: 0.8rem 1.2rem
+      border-radius: 10px
+      background: $light-green
+      color: white
+      text-transform: uppercase
+      font-weight: 900
+      box-shadow: $shadow
+      &:hover
+.svg
+  &__arrow-transparent
+    position: absolute
+    top: 0
+    margin-top: auto
+    margin-bottom: auto
+    fill: $light-green
+    height: 3.7rem
+    &--left
+      transform: rotate(180deg)
+      left: 3rem
+    &--right
+      right: 3rem
+    &--of-court
+      bottom: 50px
+    &--of-sport-life
+      bottom: 0

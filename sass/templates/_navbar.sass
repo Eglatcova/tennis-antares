@@ -1,0 +1,104 @@
+.navbar
+  background-color: $light-grey
+  position: fixed
+  width: 100%
+  top: 0
+  z-index: 1000000
+  &__container
+    display: flex
+    align-items: flex-end
+    margin: auto
+    padding: 1.2rem 0rem 2.2rem 0rem
+    max-width: 1280px
+  &__menu
+    display: flex
+    justify-content: space-around
+    align-items: flex-end
+    flex-basis: 45%
+  &__logo
+    flex-basis: 17%
+  &__logo>a
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    margin-bottom: -0.95rem
+  &__telephone-wrap
+    flex-basis: 18%
+    align-items: flex-end
+    text-align: center
+  &__btn-wrap
+    flex-basis: 20%
+    display: flex
+    align-items: center
+    justify-content: flex-end
+  &__item
+    font-size: 0.85rem
+    text-transform: uppercase
+    font-family: "Segoe UI Light"
+    font-weight: 900
+  &__item-wrap
+    position: relative
+    display: flex
+    align-items: flex-end
+    z-index: 1
+    &:hover
+      background-color: black
+      .navbar__downmenu
+        display: flex
+  &__only-item-more-wrap
+    display: flex
+    align-items: flex-end
+    &:hover
+      cursor: pointer
+  &__call
+    padding: 0.37rem 1rem 0.5rem 1rem
+    display: flex
+    text-align: center
+    border: solid 1px #506D20
+    border-radius: 10px
+    box-shadow: 2px 2px 5px 1px rgba($dark,0.2)
+    background-color: $white
+    color: $dark-green
+    text-transform: uppercase
+  &__telephone
+    font-size: 1.2rem
+    font-weight: 600
+  &__downmenu
+    position: absolute
+    z-index: -1
+    left: -1rem
+    top: -0.5rem
+    display: none
+    flex-direction: column
+    padding: 1.5rem 1rem 1rem 1rem
+    text-transform: uppercase
+    background: $white
+    border-radius: 10px
+    box-shadow: $shadow
+    &:hover
+      display: flex
+.logo
+  &__title
+    margin-top: -0.2rem
+    display: flex
+    align-items: center
+    font-family: "Museo Sans 500 Medium"
+    font-size: 1.6rem
+    line-height: 1rem
+  &__svg
+    width: 3.7rem
+    height: 4rem
+  &__img
+    display: flex
+    align-items: center
+.item-svg
+  &__more
+    margin-left: 0.3rem
+    width: 0.9rem
+    height: 0.9rem
+.downmenu
+  &__item
+    margin-top: 0.75rem
+    font-size: 0.85rem
+    font-family: "Segoe UI Light"
+    font-weight: 900

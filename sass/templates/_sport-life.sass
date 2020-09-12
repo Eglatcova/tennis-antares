@@ -1,0 +1,44 @@
+.sport-life
+  background: $green-background
+  &__slider-container
+    position: relative
+    height: 550px
+    margin-bottom: 2rem
+  &__slider
+    margin-top: 2.5rem
+    list-style: none
+  &__slide
+    position: absolute
+    display: none
+    height: 550px
+    left: 0
+    right: 0
+    margin: auto
+  &__slide-active
+    display: block
+  &__imges-wrap
+    width: 60%
+    height: 550px
+    margin: auto
+    display: flex
+    justify-content: space-around
+    align-items: center
+    flex-wrap: wrap  
+  &__img
+    height: 45%
+    background: $light-grey
+    flex-basis: 45%
+    border-radius: 10px
+    box-shadow: $shadow
+  &__svg
+    position: absolute
+    fill: $green-background
+    height: 7rem
+    width: 7rem
+    &--ball-up
+      top: 3rem
+      left: 3rem
+    &--ball-down
+      bottom: 3rem
+      right: 3rem
+      transform: rotate(180deg)
